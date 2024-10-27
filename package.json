@@ -1,0 +1,14 @@
+{
+  "name": "gnome-show-app-icons-extension",
+  "version": "1.0.0",
+  "description": "GNOME extension to display open applications as icons in the top panel",
+  "main": "extension.js",
+  "scripts": {
+    "install": "npm run build && cp -r . ~/.local/share/gnome-shell/extensions/show-app-icons@bigimattia && gnome-extensions enable show-app-icons@bigimattia",
+    "build": "echo 'Building the extension...'",
+    "uninstall": "gnome-extensions disable show-app-icons@bigimattia && rm -rf ~/.local/share/gnome-shell/extensions/show-app-icons@bigimattia && echo 'Extension uninstalled.'"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
+

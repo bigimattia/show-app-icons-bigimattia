@@ -1,0 +1,9 @@
+{
+  "uuid": "show-app-icons@bigimattia",
+  "name": "Show App Icons",
+  "description": "Shows icons of open applications in the top panel.",
+  "version": 1,
+  "shell-version": ["46", "47"],
+  "settings-schema": "org.gnome.shell.extensions.show-app-icons"
+}
+
