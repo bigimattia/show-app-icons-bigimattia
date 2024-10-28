@@ -1,0 +1,19 @@
+.app-running-on-current-workspace,
+.app-notrunning,
+.app-running-noton-current-workspace {
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.app-running-on-current-workspace {
+  border-radius: 30px;
+  background: #26A269;
+}
+
+.empty-panel-status-menu-box {
+  visibility: hidden;
+}

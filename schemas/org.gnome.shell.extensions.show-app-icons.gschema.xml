@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.show-app-icons" path="/org/gnome/shell/extensions/show-app-icons@bigimattia/">
+    <!-- <key name="show-indicator" type="b">
+      <default>true</default>
+    </key> -->
+
+    <key type="b" name="show-only-active-workspace-apps">
+        <default>false</default>
+        <summary>Show only apps in active workspace</summary>
+    </key>
+
+    <key type="b" name="enable-minimize-apps">
+        <default>false</default>
+        <summary>Enable minimize apps on click</summary>
+    </key>
+  </schema>
+</schemalist>

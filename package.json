@@ -5,7 +5,7 @@
   "main": "extension.js",
   "scripts": {
     "install": "npm run build && cp -r . ~/.local/share/gnome-shell/extensions/show-app-icons@bigimattia && gnome-extensions enable show-app-icons@bigimattia",
-    "build": "echo 'Building the extension...'",
+    "build": "echo 'Building the extension...' && glib-compile-schemas ./schemas",
     "uninstall": "gnome-extensions disable show-app-icons@bigimattia && rm -rf ~/.local/share/gnome-shell/extensions/show-app-icons@bigimattia && echo 'Extension uninstalled.'"
   },
   "author": "Your Name",
