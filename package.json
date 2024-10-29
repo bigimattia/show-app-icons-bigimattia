@@ -4,8 +4,10 @@
   "description": "GNOME extension to display open applications as icons in the top panel",
   "main": "extension.js",
   "scripts": {
-    "install": "npm run build && cp -r . ~/.local/share/gnome-shell/extensions/show-app-icons@bigimattia && gnome-extensions enable show-app-icons@bigimattia",
+    "install": "npm run build && npm run removeFromFolder && npm run moveToFolder && gnome-extensions enable show-app-icons@bigimattia",
     "build": "echo 'Building the extension...' && glib-compile-schemas ./schemas",
+    "moveToFolder": "echo 'Moving the extension to the ~/.local/share/gnome-shell/extensions/ folder...' && rsync -av --exclude='.git' . ~/.local/share/gnome-shell/extensions/show-app-icons@bigimattia",
+    "removeFromFolder": "echo 'Removing the extension from the ~/.local/share/gnome-shell/extensions/ folder...' && rm -rf ~/.local/share/gnome-shell/extensions/show-app-icons@bigimattia",
     "uninstall": "gnome-extensions disable show-app-icons@bigimattia && rm -rf ~/.local/share/gnome-shell/extensions/show-app-icons@bigimattia && echo 'Extension uninstalled.'"
   },
   "author": "Your Name",
